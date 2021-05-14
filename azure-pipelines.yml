@@ -71,5 +71,5 @@ stages:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
               appName: $(webAppName)
-              package: '$(System.ArtifactsDirectory)/**/*.war'
+              package: '$(System.ArtifactsDirectory)/*.war'
               StartupCommand: 'bin\startup.sh'
