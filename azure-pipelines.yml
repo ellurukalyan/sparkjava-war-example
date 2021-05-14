@@ -64,5 +64,6 @@ stages:
               azureSubscription: $(azureSubscription)
               appType: webAppLinux
               appName: $(webAppName)
-              package: '$(Pipeline.Workspace)/drop/**/target/*.war'
-              StartupCommand: 'bin\startaup.sh'
+              package: '$(System.DefaultWorkingDirectory)/**/*.war'
+              StartupCommand: 'bin\startup.bat'
+
