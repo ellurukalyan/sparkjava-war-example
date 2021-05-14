@@ -65,3 +65,4 @@ stages:
               appType: webAppLinux
               appName: $(webAppName)
               package: '$(Pipeline.Workspace)/drop/**/target/*.war'
+              StartupCommand: 'bin\startaup.sh'
